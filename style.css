@@ -67,7 +67,6 @@ button:active {
 #content {
   text-align: center;
   font-family: 'Comfortaa', cursive;
-  transition-duration: 2s;
   display: inline-block;
   margin-left: 20%;
   margin-right: 20%;
