@@ -43,22 +43,21 @@ function next2(event) {
   header.remove();
   content.innerHTML = `
 
-<! -- тут текст по центру не стоит без margin-left  -->
-  <div id="textInfo" style="margin-left: 20%">
+  <div id="textInfo">
     <b> Если вы хотите поиграть с нами </b>
   </div>
 
   <div class="wrapper_links">
     <div>
-      <h2> Форум </h2>
+      <h2 id="endPageH"> Форум </h2>
       <img src='assets/img/forum.png' height='200px' weidth='200px'>
-       <br> заполните заявку и пройдите интервью <br>
+       <br> <span style="font-size: 20px;">заполните заявку и пройдите интервью </span> <br>
       <a href='http://longbridge.cf/'> ссылка </a>
     </div>
     <div>
-      <h2> Discord </h2>
+      <h2 id="endPageH"> Discord </h2>
       <img src='assets/img/discord.png' height='200px' weidth='200px'>
-      <br> площадка общения нашего сообщества <br>
+      <br> <span style="font-size: 20px;">площадка общения нашего сообщества </span> <br>
       <a href='https://discord.gg/KbMEYYhzXA'> ссылка </a>
     </div>
   </div>

@@ -37,6 +37,7 @@ h1 {
     0 0 151px #00c4ff;
 }
 
+
 .wrapper {
   display: grid;
   grid-template-columns: repeat(3, 33%);
@@ -57,6 +58,7 @@ h1 {
   text-align: center;
   backdrop-filter: blur(2px);
   text-shadow: 4px 4px 5px black;
+  right: 10%;
 }
 
 button {
@@ -95,14 +97,14 @@ input[type=checkbox]{
 label {
   cursor: pointer;
   text-indent: -9999px;
-  width: 160px;
-  height: 75px;
+  width: 140px;
+  height: 50px;
   background: grey;
   display: block;
   border-radius: 100px;
   position: fixed;
-  bottom: 5%;
-  left: 59%;
+  bottom: 7%;
+  left: 64%;
 }
 
 label:after {
@@ -110,8 +112,8 @@ label:after {
   position: absolute;
   top: 5px;
   left: 5px;
-  width: 65px;
-  height: 65px;
+  width: 40px;
+  height: 40px;
   background: #fff;
   border-radius: 90px;
   transition: 0.3s;
@@ -172,6 +174,11 @@ label:active:after {
 #checkText {
   position: fixed;
   bottom: 5%;
-  left: 43%;
+  left: 48%;
   font-size: 35px;
+}
+
+#endPageH {
+  font-size: 30px;
+  margin-top: 0px;
 }
