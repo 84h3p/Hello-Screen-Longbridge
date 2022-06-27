@@ -64,8 +64,10 @@ function next2(event) {
   </div>
 
   <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
-
-  <button id="nextButtonSecond" name="button2"> Закрыть </button>
+  <div id="checkText">
+    Больше не <br> показывать
+  </div>
+  <button id="endButton" name="button3"> Закрыть </button>
 
   `;
 }

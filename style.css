@@ -73,9 +73,6 @@ button {
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
-  position: fixed;
-  bottom: 5%;
-  left: 43%;
 }
 
 button:hover {
@@ -105,7 +102,7 @@ label {
   border-radius: 100px;
   position: fixed;
   bottom: 5%;
-  left: 60%;
+  left: 59%;
 }
 
 label:after {
@@ -152,4 +149,29 @@ label:active:after {
   padding: 4%;
   text-shadow: 4px 4px 5px black;
   text-align: center;
+}
+
+#nextButton {
+  position: fixed;
+  bottom: 5%;
+  left: 43%;
+}
+
+#nextButtonSecond {
+  position: fixed;
+  bottom: 5%;
+  left: 43%;
+}
+
+#endButton {
+  position: fixed;
+  bottom: 5%;
+  left: 27%;
+}
+
+#checkText {
+  position: fixed;
+  bottom: 5%;
+  left: 43%;
+  font-size: 35px;
 }
