@@ -1,15 +1,12 @@
 const content = document.getElementById('content');
-const nextButton = document.getElementById('nextButton')
-const header = document.getElementById('header')
+const nextButton = document.getElementById('nextButton');
+const header = document.getElementById('header');
 
+// переход текста к департаментам
 function next(event) {
   content.innerHTML = `
-
-
-
-
   <div id="textInfo">
-    Здесь вы можете играть в следующих департаментах:
+    <b> Здесь вы можете играть в следующих департаментах: </b>
   </div>
 
   <div class="wrapper">
@@ -33,13 +30,45 @@ function next(event) {
     </div>
   </div>
 
-
-
-<button id="nextButton" name="button"> Далее </button>
+<button id="nextButtonSecond" name="button2"> Далее </button>
   `;
-  header.innerHTML = ''
 
+  header.innerHTML = '';
+  const nextButtonSecond = document.getElementById('nextButtonSecond');
+  nextButtonSecond.addEventListener("click", next2);
 }
 
+
+function next2(event) {
+  header.remove();
+  content.innerHTML = `
+
+<! -- тут текст по центру не стоит без margin-left  -->
+  <div id="textInfo" style="margin-left: 20%">
+    <b> Если вы хотите поиграть с нами </b>
+  </div>
+
+  <div class="wrapper_links">
+    <div>
+      <h2> Форум </h2>
+      <img src='assets/img/forum.png' height='200px' weidth='200px'>
+       <br> заполните заявку и пройдите интервью <br>
+      <a href='http://longbridge.cf/'> ссылка </a>
+    </div>
+    <div>
+      <h2> Discord </h2>
+      <img src='assets/img/discord.png' height='200px' weidth='200px'>
+      <br> площадка общения нашего сообщества <br>
+      <a href='https://discord.gg/KbMEYYhzXA'> ссылка </a>
+    </div>
+  </div>
+
+  <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
+
+  <button id="nextButtonSecond" name="button2"> Закрыть </button>
+
+  `;
+}
+
+
 nextButton.addEventListener("click", next);
-search.addEventListener('submit', (event) => event.preventDefault());

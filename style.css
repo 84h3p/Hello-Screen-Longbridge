@@ -1,26 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:ital,wght@1,100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 
 body{
-  background-image: url(assets/background.png);
+  background-image: url(assets/img/background.png);
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
   background-repeat: repeat;
 }
 
+img {
+  margin: 30px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+  margin-top: 50px;
+}
+
 h1 {
   text-align: center;
   margin: 10%;
   margin-top: 7%;
-  margin-bottom: 7%;
+  margin-bottom: 2%;
   font-size: 80px;
-  font-family: 'Roboto', sans-serif;
-  color: #fff;
+  font-family: 'Comfortaa', cursive;  color: #fff;
   text-shadow:
-    0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 21px #fff,
+    0 0 7px #7a8dea,
+    0 0 10px #7a8dea,
+    0 0 21px #7a8dea,
     0 0 42px #00c4ff,
     0 0 82px #00c4ff,
     0 0 92px #00c4ff,
@@ -33,8 +42,22 @@ h1 {
   grid-template-columns: repeat(3, 33%);
   grid-row-gap: 5em;
   margin-bottom: 5%;
+  position: relative;
+  text-align: center;
+  backdrop-filter: blur(2px);
+  text-shadow: 4px 4px 5px black;
 }
 
+.wrapper_links {
+  display: grid;
+  grid-template-columns: repeat(2, 60%);
+  grid-row-gap: 5em;
+  margin-bottom: 5%;
+  position: relative;
+  text-align: center;
+  backdrop-filter: blur(2px);
+  text-shadow: 4px 4px 5px black;
+}
 
 button {
   padding: 1.3em 3em;
@@ -50,6 +73,9 @@ button {
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
+  position: fixed;
+  bottom: 5%;
+  left: 43%;
 }
 
 button:hover {
@@ -63,6 +89,50 @@ button:active {
   transform: translateY(-1px);
 }
 
+input[type=checkbox]{
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 160px;
+  height: 75px;
+  background: grey;
+  display: block;
+  border-radius: 100px;
+  position: fixed;
+  bottom: 5%;
+  left: 60%;
+}
+
+label:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 65px;
+  height: 65px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  background: #f65b52;
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 130px;
+}
+
 
 #content {
   text-align: center;
@@ -70,15 +140,16 @@ button:active {
   display: inline-block;
   margin-left: 20%;
   margin-right: 20%;
-  backdrop-filter: blur(2px);
   border-radius: 50px;
 }
 
 
 #textInfo {
   font-size: 40px;
+  backdrop-filter: blur(2px);
   margin: 5%;
-  margin-top: 0%;
+  margin-top: 5%;
   padding: 4%;
   text-shadow: 4px 4px 5px black;
+  text-align: center;
 }
