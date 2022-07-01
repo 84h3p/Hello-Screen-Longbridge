@@ -4,6 +4,7 @@ const header = document.getElementById('header');
 
 // переход текста к департаментам
 function next(event) {
+  header.remove();
   content.innerHTML = `
   <div id="textInfo">
     <b> Здесь вы можете играть в следующих департаментах: </b>
@@ -66,7 +67,7 @@ function next2(event) {
   <div id="checkText">
     Больше не <br> показывать
   </div>
-  <button id="endButton" name="button3"> Закрыть </button>
+  <button id="close" name="button3"> Закрыть </button>
 
   `;
 }

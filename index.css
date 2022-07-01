@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 
 body{
-  background-image: url(assets/img/background.png);
+  background-image: url(assets/img/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
@@ -51,14 +51,14 @@ h1 {
 
 .wrapper_links {
   display: grid;
-  grid-template-columns: repeat(2, 50%);
+  grid-template-columns: repeat(2, 60%);
   grid-row-gap: 5em;
   margin-bottom: 5%;
   position: relative;
-  left: 50px;
   text-align: center;
   backdrop-filter: blur(2px);
   text-shadow: 4px 4px 5px black;
+  right: 10%;
 }
 
 button {
@@ -104,7 +104,7 @@ label {
   border-radius: 100px;
   position: fixed;
   bottom: 7%;
-  left: 64%;
+  left: 70%;
 }
 
 label:after {
@@ -147,11 +147,10 @@ label:active:after {
   font-size: 40px;
   backdrop-filter: blur(2px);
   margin: 5%;
-  margin-top: 5%;
+  margin-top: 15%;
   padding: 4%;
   text-shadow: 4px 4px 5px black;
   text-align: center;
-
 }
 
 #nextButton {
@@ -166,7 +165,7 @@ label:active:after {
   left: 43%;
 }
 
-#endButton {
+#close {
   position: fixed;
   bottom: 5%;
   left: 27%;
@@ -175,7 +174,7 @@ label:active:after {
 #checkText {
   position: fixed;
   bottom: 5%;
-  left: 48%;
+  left: 57%;
   font-size: 35px;
 }
 

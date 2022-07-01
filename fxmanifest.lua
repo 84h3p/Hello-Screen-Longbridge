@@ -6,5 +6,7 @@ files {
     'index.html',
     'script.js',
     'style.css',
-    'assets/background.png'
+    'assets/background.png',
+    'assets/discord.png',
+    'assets/forum.png'
 }
