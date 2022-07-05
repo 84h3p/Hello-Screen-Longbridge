@@ -70,7 +70,9 @@ function next2(event) {
   <button id="close" name="button3"> Закрыть </button>
 
   `;
+  
 }
 
 
 nextButton.addEventListener("click", next);
+
